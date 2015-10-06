@@ -26,3 +26,4 @@ CSV.foreach("#{Dir.home}/Documents/software_engineering/products.csv", quote_cha
   
 connection.exec_prepared('product_import', [product['Description'], product['ItemLookupCode'], product['Price'], product['ItemType'], product['Cost'], product['Quantity'], product['ReorderPoint'], product['RestockLevel'], product['ParentItem'], product['ExtendedDescription'], product['Inactive'], product['MSRP'], $datecreated])
 end
+#will add functionality for error handling to complete the import
